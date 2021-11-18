@@ -7,10 +7,7 @@ spec:
   selector:
     app: wil-playground
   ports:
-    - protocol: TCP
+    - name: http
       port: 8888
       targetPort: 8888
-status:
-  loadBalancer:
-    ingress:
-    - ip: 192.168.42.111
+      protocol: TCP
