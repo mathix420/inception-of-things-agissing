@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: wil-playground
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: wil-playground
   ports:
